@@ -25,7 +25,13 @@ h1{
     font-size: 16px;
     line-height: 22px;
 }
-
+.info__text-xs{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: rgba(243, 246, 250, 1);
+    border-radius: 5px; 
+    padding: 24px;}
 /*Form*/
 .form-block{
     margin-top: 40px;
