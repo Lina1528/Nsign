@@ -1,0 +1,162 @@
+:root{
+    --btn-color: rgba(16, 189, 153, 1) ;
+}
+
+body{
+    font-family: 'Golos Text', sans-serif;
+}
+.container{
+    margin: 0 auto;
+    width: 1020px;
+    padding: 0px 5px;
+}
+
+h1{
+    margin-top: 24px;
+    margin-bottom: 64px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 68px;
+}
+
+/*Info*/
+.info__text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+/*Form*/
+.form-block{
+    margin-top: 40px;
+}
+
+.form-block__content{
+    padding: 40px;
+    background-color: rgba(243, 246, 250, 1);
+}
+form{
+    margin-top: 24px;    
+}
+.form-block__title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.form-label{
+    color:rgba(19, 33, 65, 1);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.form-control{
+    min-height: 48px;
+}
+.form-control[placeholder]{
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(161, 166, 179, 1);
+}
+.form-control-sm{
+    padding-top: 12px;
+    padding-left: 12px;
+}
+.form-block__btn{
+    background-color: var(--btn-color);
+    padding: 17px 24px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 24px;
+
+    transition:  0.3s linear;
+}
+.form-block__btn:hover{
+    color: var(--btn-color);
+    background: #fff;
+    border: 1px solid var(--btn-color);
+}
+.form-block__form-wrapper{
+    --bs-gutter-x: 0;
+}
+/*Второй экран с текстом*/
+h2{
+    color: rgba(19, 33, 65, 1);
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 56px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.info__text-last{
+    margin-top: 40px;
+}
+
+.info__text-last a{
+    text-decoration: none;
+    color: rgba(16, 189, 153, 1);
+}
+/*Вторая форма*/
+.form-block-footer{
+    padding-bottom: 80px;
+}
+
+.form-block__title-footer{
+    color: rgba(14, 74, 205, 1);
+    font-size: 18px;
+}
+
+/*Breakpoints*/
+@media(max-width: 992px){
+    .container{
+        width: calc(100% - 8.888%);
+        margin: 0 auto;
+    }
+    h1{
+        font-size: 44px;
+        line-height: 48px;
+        margin-bottom: 40px;
+    }
+}
+@media(max-width: 575px){
+    
+    h1{
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 24px;
+    }
+    .info__text{
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .form-block{
+        margin-top: 30px;
+    }
+    .form-block__content{
+        padding: 20px;
+    }
+    .form-block__title{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .form-control[placeholder] {
+        font-size: 14px;
+    }
+    .form-block__btn{
+        width: 100%;
+    }
+    h2{
+        font-size: 18px;
+        line-height: 24px;
+        margin-top: 30px;
+        margin-bottom: 16px;
+    }
+    .info__text-last {
+        margin-top: 16px;
+    }
+    .form-block-footer {
+        padding-bottom: 64px;
+    }
+}
